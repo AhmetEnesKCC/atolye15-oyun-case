@@ -1,0 +1,20 @@
+.form {
+  @apply mt-10 flex items-center justify-between flex-col space-y-12 px-4 sm:px-0;
+  div {
+    @apply w-full sm:w-[60%] flex flex-col items-start;
+    label {
+      @apply text-lg mb-2 font-semibold text-opacity-60 text-black;
+    }
+    input[type="text"] {
+      @apply w-full bg-transparent border-2 border-gray-300 py-2 px-3  outline-transparent focus:outline-blue-400 outline-[4px] text-black font-semibold text-xl rounded-sm;
+    }
+  }
+}
+
+.submit_button {
+  @apply bg-green-600 text-white font-semibold px-10 py-2 rounded-sm w-full shadow-sm hover:brightness-110 active:shadow-green-600;
+}
+
+.warning_message {
+  @apply bg-red-400 text-white py-1 !w-full  !mt-4 !mb-2  text-center !items-center;
+}

@@ -1,0 +1,9 @@
+.player_wrapper {
+  @apply flex flex-col items-center justify-around  text-sm font-bold whitespace-pre-line uppercase  gap-y-3 w-[100px];
+  .word {
+    @apply text-2xl font-semibold lowercase;
+    span {
+      @apply text-green-600 underline;
+    }
+  }
+}

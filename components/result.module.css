@@ -1,0 +1,16 @@
+.resultWrapper {
+  @apply w-full h-full bg-[#212121] absolute top-full z-[999999] transition-all duration-700;
+
+  .winnerName {
+    @apply text-3xl mx-auto my-2 font-bold text-gray-300;
+  }
+  .losing_reason {
+    @apply my-2 text-2xl text-red-400;
+  }
+  .wordList {
+    @apply overflow-x-auto px-3 py-10 border-2 flex items-center  gap-x-6 text-2xl text-white;
+  }
+  .restart {
+    @apply px-2 py-3 bg-transparent border-2 border-green-300 text-green-300 mt-10 hover:bg-green-300 hover:text-[#212121] font-semibold transition duration-500;
+  }
+}

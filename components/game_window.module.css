@@ -1,0 +1,39 @@
+.backgorund_blur {
+  @apply backdrop-blur-md w-screen h-screen fixed top-0 left-0 transition-all;
+  animation: 1s blur_transition linear forwards;
+}
+
+.game_window {
+  @apply absolute top-[10%] left-[10%] h-[80%] w-[80%] bg-white backdrop-blur-0 shadow-lg overflow-hidden;
+  .cancel_game {
+    @apply mx-auto mt-2 w-max text-2xl hover:bg-red-300 hover:text-white rounded-md p-1 cursor-pointer;
+  }
+
+  .game_screen {
+    @apply flex items-start justify-between pt-10 px-12;
+    svg {
+      @apply !text-3xl;
+    }
+    .word_wrapper {
+      @apply text-3xl mx-auto font-semibold;
+      .last_letter {
+        @apply text-green-600 underline;
+      }
+    }
+  }
+  .stopwatch {
+    @apply absolute bottom-0   w-full;
+    transition: 8s background-color linear;
+
+    .stopwatch_pc {
+      @apply float-left w-[50%] h-full    py-2 px-2 bg-green-500;
+    }
+
+    .stopwatch_human {
+      @apply float-right w-[50%] h-full   py-2 px-2 bg-green-500;
+    }
+    .remain {
+      @apply w-[0%] bg-white h-2;
+    }
+  }
+}
