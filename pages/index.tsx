@@ -11,8 +11,11 @@ const Home: NextPage = () => {
   const settings = useSelector((state: RootState) => state.settings);
 
   useEffect(() => {
-    localStorage.setItem("voice_access", "prompt");
-  });
+    // @ts-ignore
+    var local_recognition = new window.webkitSpeechRecognition();
+    local_recognition.start();
+    local_recognition.stop();
+  }, []);
 
   return (
     <>
