@@ -10,6 +10,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html {
+  font-size: 16px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -23,4 +27,10 @@ a {
 
 .red-border {
   @apply !border-red-300 !border-2;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
 }

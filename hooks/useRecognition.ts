@@ -14,7 +14,6 @@ const useRecognition = (onResult: (...params: any[]) => any) => {
     // @ts-ignore
     var local_recognition = new window.webkitSpeechRecognition();
     local_recognition.interimResults = false;
-    local_recognition.continuous = false;
     local_recognition.lang = "tr-TR";
 
     local_recognition.onstart = () => {
